@@ -1,0 +1,33 @@
+{
+  "name": "mw-astronomy",
+  "version": "1.0.0",
+  "description": "Just for Web development college project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrionStark/mw-astronomy.git"
+  },
+  "keywords": [
+    "Astronomy",
+    "Science",
+    "Education",
+    "Math",
+    "Space",
+    "Universe"
+  ],
+  "author": "Robby Muhammad a.k.a OrionStark a.k.a orionoscode",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/OrionStark/mw-astronomy/issues"
+  },
+  "homepage": "https://github.com/OrionStark/mw-astronomy#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "calculation-ofsun": "^1.0.1",
+    "express": "^4.16.3",
+    "socket.io": "^2.1.0"
+  }
+}
