@@ -1,9 +1,9 @@
-const express = require('express');
-const router = express.Router;
-const sunController = require('../controllers/suncalculation');
+const suncalcController = require('../controllers/suncalculation');
 
+module.exports = (app) => {
+    app.get('/nasa/neo/today', getNearEarthObjectToday);
+};
 
-router.get('/sun/position', (req, res) => {
-    var date = req.body.date;
-    
-});
+function getNearEarthObjectToday(req, res) {
+    //
+}

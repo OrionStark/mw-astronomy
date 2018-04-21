@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+</head>
+<body>
+    <ul>
+        <li id="jd">My JulianDate: </li>
+        <li id="date">My Date TIme : </li>
+        <li id="azim">Sun azimuth  : </li>
+        <li id="alt">Sun altitude : </li>
+        <li id="ha">Hour angle: </li>
+    </ul>
+    <script>
+        var socket = io();
+        socket.emit('where is the sun', "medan");
+        socket.on('data', function(data) {
+            document.getElementById('jd').innerHTML = "Julian Date : " + data.clientJD;
+            document.getElementById('date').innerHTML = "Date : " + data.date;
+            document.getElementById('azim').innerHTML = "Sun Azimuth : " + data.sun_position.azimuth;
+            document.getElementById('alt').innerHTML = "Sun Altitude : " + data.sun_position.altitude;
+            document.getElementById('ha').innerHTML = "Hour Angle : " + data.hour_angle;
+        });
+    </script>
+</body>
+</html>
