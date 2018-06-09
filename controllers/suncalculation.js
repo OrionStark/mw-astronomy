@@ -1,7 +1,7 @@
 const calculation = require('calculation-ofsun');
 
 module.exports = {
-    sunPosition: getSunPosition,
+    sunInformation: getSunInformation,
     sunDeclination: getSunDeclination
 };
 

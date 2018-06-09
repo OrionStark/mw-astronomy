@@ -5,7 +5,9 @@
 module.exports = {
     neo_url: neoUrl,
     saltRounds: 10,
-    secret_key: "yggdrasil3422"
+    secret_key: "yggdrasil3422",
+    neo_url: neoUrl,
+    formatMyDateToNASARequiredDate: getDateFormat
 };
 
 
@@ -21,7 +23,8 @@ const nasa_api_key = "kR5WRl2oeCmgphetTODr4pLlxR8NsyjR7ceoTUVl";
 function neoUrl(start_date, end_date) {
     start_date = getDateFormat(start_date);
     end_date = getDateFormat(end_date);
-    let url = "https://api.nasa.gov/neo/rest/v1/feed?start_date="+ start_date +"&end_date="+ end_date +"&api_key=" + nasa_api_key;
+    let url = "https://api.nasa.gov/neo/rest/v1/feed?start_date="+ start_date 
+                +"&end_date="+ end_date +"&api_key=" + nasa_api_key;
     return url;
 }
 
