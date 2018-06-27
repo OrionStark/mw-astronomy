@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OrionStark/mw-astronomy.git"
+    "url": "https://github.com/OrionStark/mw-astronomy.git"
   },
   "keywords": [
     "Astronomy",
@@ -28,14 +28,14 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.18.3",
     "calculation-ofsun": "^1.0.3",
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.2.2",
-    "mongodb": "^3.0.6",
+    "mongodb": "^3.0.10",
     "morgan": "^1.9.0",
     "q": "^1.5.1",
-    "socket.io": "^2.1.0"
+    "socket.io": "^2.1.1"
   }
 }

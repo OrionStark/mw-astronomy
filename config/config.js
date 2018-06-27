@@ -21,6 +21,12 @@ const nasa_api_key = "kR5WRl2oeCmgphetTODr4pLlxR8NsyjR7ceoTUVl";
  * @return {string} NEO URL 
  */
 function neoUrl(start_date, end_date) {
+    if ( typeof start_date === "string" ) {
+        start_date = new Date(start_date);
+    }
+    if ( typeof end_date === "string" ) {
+        end_date = new Date(end_date);
+    }
     start_date = getDateFormat(start_date);
     end_date = getDateFormat(end_date);
     let url = "https://api.nasa.gov/neo/rest/v1/feed?start_date="+ start_date 
@@ -31,6 +37,7 @@ function neoUrl(start_date, end_date) {
 /**
  * NASA required yyyy-mm-dd format to make a request
  * @param {Date} date 
+ * @returns {string} Date format
  */
 function getDateFormat(date) {
     let month = '' + ( date.getMonth() + 1 );
