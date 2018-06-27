@@ -1,5 +1,5 @@
 # Astro Social Back-end
-This is the back-end code for Astro Social. For the Sun calculation library, I'm using my own tiny library. You can get the code on [Calculation of Sun repo](hhttps://github.com/OrionStark/calculation-of-sun)  
+This is the back-end code for Astro Social. For the Sun calculation library, I'm using my own tiny library. You can get the code on [Calculation of Sun repo](https://github.com/OrionStark/calculation-of-sun)  
 
 # How to run it
 ```javascript
